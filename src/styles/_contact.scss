@@ -1,0 +1,70 @@
+@use 'config/reset';
+@use 'config/var';
+
+//Section - Contact
+
+.contact{
+  &__container{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+
+    .container{
+      align-items: center;
+    }
+  }
+
+  &__img{
+    width: 40%;
+    object-fit: cover;
+
+    img{
+      max-width: 30rem;
+    }
+  }
+
+  &__texts{
+    width: 60%;
+    margin-left: 3rem;
+
+    &__title{
+      font-size: 3.2rem;
+      font-weight: 500;
+      color: var.$ColorGrayPrimary;
+    }
+
+    &__text{
+      margin: 1.5rem 0rem 2.5rem 0rem;
+      color: var.$ColorGraySecondary;
+    }
+  }
+
+  &__icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 30rem;
+
+    img{
+      background-color: rgba(177, 177, 177, 0.15);
+      border-radius: 2rem;
+      max-width: 5rem;
+      padding: 1rem;
+      cursor: pointer;
+    }
+    
+  }
+}
+
+@media screen and (max-width: var.$mobile){
+  .contact{
+    &__container{
+      display: block;
+    } 
+
+    &__texts{
+      text-align: justify;
+      width: 85%;
+    }
+  }
+}
