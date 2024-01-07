@@ -13,6 +13,13 @@ function comprimeHtml(){
   .pipe(gulp.dest('./build'));
 }
 
+function comprimeJavaScript(){
+  return gulp.src('./src/scripts/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/scripts'));
+}
+
+
 function comprimeImagens(){
   return gulp.src('./src/images/*')
     .pipe(imagemin())
@@ -33,12 +40,6 @@ function compilaSass(){
 exports.default = function(){
   gulp.watch('./src/styles/*.scss', {ignoreInitial: false}, gulp.series(compilaSass));
   gulp.watch('./src/images', {ignoreInitial: false}, gulp.series(comprimeImagens));
-
+  gulp.watch('./src/scripts/*.js', {ignoreInitial: false}, gulp.series(comprimeJavaScript));
   gulp.watch('index.html', {ignoreInitial: false}, gulp.series(comprimeHtml));
 }
-
-/* 
-  gulp.watch('./src/scripts/*.js', {ignoreInitial: false}, gulp.series(comprimeJavaScript));
-  
-
-*/
