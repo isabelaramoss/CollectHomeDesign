@@ -1,0 +1,97 @@
+@use 'config/reset';
+@use 'config/var';
+
+//Footer
+
+.footer{
+  padding: 4rem 7rem;
+  background-color: var.$ColorSecondary;
+
+  &__container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  &__first{
+    margin-right: 1.9rem;
+  }
+
+  &__logo__name{
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var.$ColorBlack;
+  }
+
+  &__copy{
+    margin: 1rem 0rem;
+    font-size: 1.4rem;
+    color: var.$ColorBlack;
+  }
+
+  &__icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 18rem;
+    margin-top: .5rem;
+
+    img{
+      max-width: 4rem;
+      background-color: rgba(212, 203, 203, 0.15);
+      border-radius: 1.5rem;
+      padding: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &__items{
+    &__title{
+      color: var.$ColorBlack;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+
+  &__list{
+    margin-top: .8rem;
+    list-style-type: none;
+  }
+
+  &__item{
+    &__link{
+      text-decoration: none;
+      color: var.$ColorBlack;
+      font-size: 1.4rem;
+      margin: 0.5rem 0rem;
+    }
+  }
+
+  &__update{
+    background-color: var.$ColorGraySilver;
+    padding: .6rem;
+
+    &__input{
+      padding: .4rem;
+      border: none;
+      outline: none;
+      background-color: var.$ColorGraySilver;
+      width: 90%
+    }
+  }
+}
+
+
+.stay{
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: var.$mobile){
+  .footer{
+    margin-top: 4rem;
+  }
+
+
+}
