@@ -1,5 +1,7 @@
 @use 'config/reset';
 @use 'config/var';
+@use 'nav';
+@use 'header';
 
 html{
   font-size: 10px;
@@ -12,5 +14,23 @@ body{
     margin: 0 auto;
   }
 
+}
+
+
+
+/*Responsive*/
+
+//Mobile
+@media screen and (max-width: var.$mobile){
+  body .container{
+    max-width: 90%;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: var.$tablet){
+  body .container{
+    max-width: 95%;
+  }
 }
 
