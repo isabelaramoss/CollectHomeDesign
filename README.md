@@ -4,7 +4,7 @@ Website responsivo para uma empresa fictícia de construção. Realizei esse pro
 
 Atualização (23/12/2023): Depois de aprender as ferramentas SASS e Gulp, atualizei este projeto com essas para melhorá-lo e deixá-lo mais profissional.
 
-Link para site:
+Link para site: https://collect-homedesign.vercel.app/
 
 Créditos de ilustrações e fotos usadas:
 
