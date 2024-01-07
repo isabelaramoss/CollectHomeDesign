@@ -1,4 +1,4 @@
-# Portfolio_CollectProject
+# Collect Home Design Project
 
 Website responsivo para uma empresa fictícia de construção. Realizei esse projeto em um período de 1 (uma) semana, com o objetivo de colocar em prática o que venho aprendendo nos últimos meses. Para realizar este site, utilizei HTML, CSS, JavaScript, Node.js, SASS, Gulp e os seguintes plugins: htmlmin, SASS, gulp-sass, sourcemaps, imagemin e uglify.
 
