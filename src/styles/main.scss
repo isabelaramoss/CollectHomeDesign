@@ -1,3 +1,15 @@
-body{
-  background-color: red;
+@use 'config/reset';
+
+html{
+  font-size: 10px;
 }
+
+body{
+  .container{
+    max-width: 102.4rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
