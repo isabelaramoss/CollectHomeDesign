@@ -17,6 +17,26 @@ body{
 
 }
 
+/*Sections*/
+.section{
+  padding-top: 7rem;
+
+  &__header{
+    margin-bottom: 5rem;
+    
+    &__title{
+      font-size: 3rem;
+      font-weight: 500;
+      color: var.$ColorGrayPrimary;
+    }
+
+    &__text{
+      color: var.$ColorGrayPrimary;
+      margin-top: 1rem;
+    }
+  }
+}
+
 
 
 /*Responsive*/
